@@ -3,7 +3,7 @@
   <id>org.videolan.VLC.Plugin.makemkv</id>
   <extends>org.videolan.VLC</extends>
   <name>MakeMKV plugin for VLC</name>
-  <summary>Provides MakeMKV features for direct Blu-ray playback in VLC.</summary>
+  <summary>Provides MakeMKV features for direct Blu-ray playback in VLC. Use MakeMKV app to set the license.</summary>
   <description>
     <p>
     You also need a license key to use this, you can buy one or get a trial one on MakeMKV website.
