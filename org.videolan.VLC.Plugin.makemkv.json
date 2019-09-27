@@ -15,6 +15,20 @@
   },
   "modules": [
     {
+      "name": "wget",
+      "no-autogen": true,
+      "config-opts": [
+        "--prefix=/app/share/vlc/extra/makemkv"
+      ],
+      "sources": [
+        {
+            "type": "archive",
+            "url": "https://ftp.gnu.org/gnu/wget/wget-1.20.3.tar.gz",
+            "sha256": "31cccfc6630528db1c8e3a06f6decf2a370060b982841cfab2b8677400a5092e"
+        }
+      ]
+    },
+    {
       "name": "makemkv-bin",
       "buildsystem": "simple",
       "build-commands": [
@@ -51,6 +65,10 @@
           "type": "archive",
           "url": "http://www.makemkv.com/download/makemkv-oss-1.14.5.tar.gz",
           "sha256": "d177f5962054d3b866d871aa06f1611dcced7ef2f0dcd41a771a50467505e1c9"
+        },
+        {
+          "type": "patch",
+          "path": "makemkv-oss-wget.patch"
         },
         {
           "type": "file",
