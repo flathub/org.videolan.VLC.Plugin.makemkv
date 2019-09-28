@@ -1,4 +1,4 @@
 {
     "only-arches": ["i386", "x86_64"],
-    "end-of-life": "Old plugin version based on 18.08 runtime. Please install this plugin in a more recent branch like 3-19.08."
+    "end-of-life": "Old plugin version based on 18.08 runtime. Please install this plugin in a more recent branch, like 3-19.08."
 }
