@@ -1,4 +1,4 @@
 {
     "only-arches": ["i386", "x86_64"],
-    "disable-icons-check": "true"
+    "skip-icons-check": "true"
 }
