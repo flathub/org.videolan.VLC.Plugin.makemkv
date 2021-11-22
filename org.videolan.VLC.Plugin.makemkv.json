@@ -3,8 +3,8 @@
   "build-extension": true,
   "runtime": "org.videolan.VLC",
   "runtime-version": "stable",
-  "branch": "3-20.08",
-  "sdk": "org.freedesktop.Sdk//20.08",
+  "branch": "3-21.08",
+  "sdk": "org.freedesktop.Sdk//21.08",
   "tags": ["proprietary"],
   "separate-locales": false,
   "appstream-compose": false,
@@ -40,8 +40,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://www.makemkv.com/download/makemkv-bin-1.15.3.tar.gz",
-          "sha256": "636dda7ad9f0a8b19a048809fc03f4a02ae1f0fe63a55adc30982673439efa2f"
+          "url": "http://www.makemkv.com/download/makemkv-bin-1.16.5.tar.gz",
+          "sha256": "a06e1ef1e2442b8490b783030c5c16cac2d6404525632234c04d032961f724f8"
         }
       ]
     },
@@ -63,8 +63,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://www.makemkv.com/download/makemkv-oss-1.15.3.tar.gz",
-          "sha256": "42bbaaf5828068d175a43b4e869b4ff7952314bd8d03812e44e478bfa5d91c4c"
+          "url": "http://www.makemkv.com/download/makemkv-oss-1.16.5.tar.gz",
+          "sha256": "e58e34b3ce95462bc38a242a120692c2b4e56c5a98e57cce372931ff486c3b8c"
         },
         {
           "type": "file",
