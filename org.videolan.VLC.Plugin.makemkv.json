@@ -23,8 +23,8 @@
       "sources": [
         {
             "type": "archive",
-            "url": "https://ftp.gnu.org/gnu/wget/wget-1.21.3.tar.gz",
-            "sha256": "5726bb8bc5ca0f6dc7110f6416e4bb7019e2d2ff5bf93d1ca2ffcc6656f220e5"
+            "url": "https://ftp.gnu.org/gnu/wget/wget-1.21.4.tar.gz",
+            "sha256": "81542f5cefb8faacc39bbbc6c82ded80e3e4a88505ae72ea51df27525bcde04c"
         }
       ]
     },
@@ -40,8 +40,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://www.makemkv.com/download/makemkv-bin-1.17.3.tar.gz",
-          "sha256": "1cd633bfb381faa4f22ab57f6b75053c1b18997c223ed7988896c8c15cd1bee0"
+          "url": "http://www.makemkv.com/download/makemkv-bin-1.17.4.tar.gz",
+          "sha256": "68ebc6f9baba7be4429014b73bdf6da33516a399f011e9e535eb383aff97748b"
         }
       ]
     },
@@ -63,8 +63,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://www.makemkv.com/download/makemkv-oss-1.17.3.tar.gz",
-          "sha256": "16be3ee29c1dd3d5292f793e9f5efbcd30a59bf035de79586e9afbfa98a6a4cb"
+          "url": "http://www.makemkv.com/download/makemkv-oss-1.17.4.tar.gz",
+          "sha256": "70e3599dd0a120ababa00d44c93ec8d2d001aea93e902355786ed90a7360cc99"
         },
         {
           "type": "file",
