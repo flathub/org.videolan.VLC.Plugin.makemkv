@@ -46,16 +46,39 @@
       ]
     },
     {
+      "name": "ffmpeg",
+      "config-opts": [
+        "--enable-pic",
+        "--enable-static",
+        "--disable-doc",
+        "--disable-shared",
+        "--prefix=/app/share/vlc/extra/makemkv/ffmpeg"
+      ],
+      "sources": [
+        {
+            "type": "archive",
+            "url": "https://www.ffmpeg.org/releases/ffmpeg-4.4.4.tar.xz",
+            "sha256": "e80b380d595c809060f66f96a5d849511ef4a76a26b76eacf5778b94c3570309"
+        },
+        {
+            "type": "patch",
+            "path": "ffmpeg_binutils241.patch"
+        }
+      ]
+    },
+    {
       "name": "makemkv-oss",
       "config-opts": [
         "--with-pic",
         "--enable-shared",
         "--disable-static",
         "--disable-gui",
+        "--prefix=/app/share/vlc/extra/makemkv",
         "DESTDIR=/",
-        "--prefix=/app/share/vlc/extra/makemkv"
+        "PKG_CONFIG_PATH=/app/share/vlc/extra/makemkv/ffmpeg/lib/pkgconfig"
       ],
       "post-install": [
+        "rm -rf /app/share/vlc/extra/makemkv/ffmpeg",
         "install -Dp -m 644 License.txt --target-directory=/app/share/vlc/extra/makemkv/share/licenses",
         "install -Dp -m 644 org.videolan.VLC.Plugin.makemkv.appdata.xml --target-directory=${FLATPAK_DEST}/share/appdata",
         "appstream-compose --basename=org.videolan.VLC.Plugin.makemkv --prefix=${FLATPAK_DEST} --origin=flatpak org.videolan.VLC.Plugin.makemkv"
