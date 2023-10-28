@@ -54,7 +54,6 @@
         "--disable-gui",
         "--prefix=/app/share/vlc/extra/makemkv",
         "DESTDIR=/",
-        "PKG_CONFIG_PATH=/app/share/vlc/extra/makemkv/ffmpeg/lib/pkgconfig",
         "ffmpeg_CFLAGS=-I/app/include"
       ],
       "post-install": [
