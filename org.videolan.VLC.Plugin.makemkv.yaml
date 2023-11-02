@@ -23,6 +23,11 @@ modules:
   - type: archive
     url: http://www.makemkv.com/download/makemkv-bin-1.17.5.tar.gz
     sha256: cb009c31f69601e2f66e315925a09ad175bad041f27c5096d7b06dd5004df04f
+    x-checker-data:
+      type: html
+      url: https://www.makemkv.com/download
+      version-pattern: MakeMKV v([\d\.]*)
+      url-template: https://www.makemkv.com/download/makemkv-bin-$version.tar.gz
 - name: makemkv-oss
   config-opts:
   - --with-pic
@@ -41,6 +46,11 @@ modules:
   - type: archive
     url: http://www.makemkv.com/download/makemkv-oss-1.17.5.tar.gz
     sha256: fc2f4b0dc53117ab49927d9a415fa73082d1a4ae47df0c4e30cc4710c4c2fc22
+    x-checker-data:
+      type: html
+      url: https://www.makemkv.com/download
+      version-pattern: MakeMKV v([\d\.]*)
+      url-template: https://www.makemkv.com/download/makemkv-oss-$version.tar.gz
   - type: file
     path: org.videolan.VLC.Plugin.makemkv.appdata.xml
 - name: envvars
