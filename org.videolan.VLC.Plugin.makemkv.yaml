@@ -2,8 +2,8 @@ id: org.videolan.VLC.Plugin.makemkv
 build-extension: true
 runtime: org.videolan.VLC
 runtime-version: stable
-branch: 3-23.08
-sdk: org.freedesktop.Sdk//23.08
+branch: 3-24.08
+sdk: org.freedesktop.Sdk//24.08
 tags:
   - proprietary
 separate-locales: false
