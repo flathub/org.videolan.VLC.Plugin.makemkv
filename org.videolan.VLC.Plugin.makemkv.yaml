@@ -6,8 +6,6 @@ branch: 3-24.08
 sdk: org.freedesktop.Sdk//24.08
 tags:
   - proprietary
-separate-locales: false
-appstream-compose: false
 build-options:
   env:
     V: '1'
@@ -39,9 +37,7 @@ modules:
       - ffmpeg_CFLAGS=-I/app/include
     post-install:
       - install -Dp -m 644 License.txt --target-directory=/app/share/vlc/extra/makemkv/share/licenses
-      - install -Dp -m 644 org.videolan.VLC.Plugin.makemkv.appdata.xml --target-directory=${FLATPAK_DEST}/share/appdata
-      - appstream-compose --basename=org.videolan.VLC.Plugin.makemkv --prefix=${FLATPAK_DEST}
-        --origin=flatpak org.videolan.VLC.Plugin.makemkv
+      - install -Dp -m 644 org.videolan.VLC.Plugin.makemkv.metainfo.xml --target-directory=${FLATPAK_DEST}/share/metainfo
     sources:
       - type: archive
         url: https://www.makemkv.com/download/makemkv-oss-1.17.8.tar.gz
@@ -52,7 +48,7 @@ modules:
           version-pattern: MakeMKV v([\d\.]*)
           url-template: https://www.makemkv.com/download/makemkv-oss-$version.tar.gz
       - type: file
-        path: org.videolan.VLC.Plugin.makemkv.appdata.xml
+        path: org.videolan.VLC.Plugin.makemkv.metainfo.xml
   - name: envvars
     buildsystem: simple
     build-commands:
