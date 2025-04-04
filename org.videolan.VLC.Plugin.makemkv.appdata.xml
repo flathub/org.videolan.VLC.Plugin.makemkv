@@ -19,8 +19,11 @@
   <project_license>LicenseRef-proprietary AND LGPL-2.1-only</project_license>
   <developer_name>GuinpinSoft inc</developer_name>
   <releases>
-    <release version="1.17.8" date="2024-09-30">
+    <release version="1.18.0" date="2025-04-04">
       <description></description>
+    </release>
+    <release version="1.17.8" date="2024-09-30">
+      <description/>
     </release>
     <release version="1.17.7" date="2024-05-15">
       <description/>
