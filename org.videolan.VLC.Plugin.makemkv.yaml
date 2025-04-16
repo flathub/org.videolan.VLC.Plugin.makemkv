@@ -19,8 +19,8 @@ modules:
       - install -Dp -m 644 src/eula_en_linux.txt --target-directory=/app/share/vlc/extra/makemkv/share/licenses
     sources:
       - type: archive
-        url: https://www.makemkv.com/download/makemkv-bin-1.17.8.tar.gz
-        sha256: 8e0f547430d9afeed976c789b5becdfb2ecfae1caade12e8e3e119a734717041
+        url: https://www.makemkv.com/download/makemkv-bin-1.18.1.tar.gz
+        sha256: b16576651eadec3585e817843a2a1a0ebcaa713b89dd1e020d8b1d056ddb2fd6
         x-checker-data:
           type: html
           url: https://www.makemkv.com/download
@@ -40,8 +40,8 @@ modules:
       - install -Dp -m 644 org.videolan.VLC.Plugin.makemkv.metainfo.xml --target-directory=${FLATPAK_DEST}/share/metainfo
     sources:
       - type: archive
-        url: https://www.makemkv.com/download/makemkv-oss-1.17.8.tar.gz
-        sha256: 92752bce3fc9f97939375b60d2af622174fe86a4ad9248cbdd8736629e6dbc8a
+        url: https://www.makemkv.com/download/makemkv-oss-1.18.1.tar.gz
+        sha256: dc47eefb1e68f7d539e4b079bb93ce64144104ad233de56818939810ecd03b7b
         x-checker-data:
           type: html
           url: https://www.makemkv.com/download
