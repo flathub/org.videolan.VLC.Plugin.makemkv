@@ -16,9 +16,12 @@
 </description>
   <url type="homepage">https://www.makemkv.com</url>
   <metadata_license>CC-BY-SA-3.0</metadata_license>
-  <project_license>LicenseRef-proprietary AND LGPL-2.1-only</project_license>
+  <project_license>LicenseRef-proprietary=https://www.makemkv.com/download/ AND LGPL-2.1-only</project_license>
   <developer_name>GuinpinSoft inc</developer_name>
   <releases>
+    <release version="2.0.0" date="2026-11-17">
+      <description></description>
+    </release>
     <release version="1.18.3" date="2026-01-24">
       <description></description>
     </release>
